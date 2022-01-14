@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="user.xsl"?>
+<User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="user.xsd">
+<offers>
+    <offer no='01'>
+        <plan>999</plan>
+        <validity>24</validity>
+        <subscription>l</subscription>
+        <description>can attend different webinars and can consult to lawyers personally</description>
+    
+    </offer>
+
+    <offer no='02'>
+
+        <plan>599</plan>
+        <validity>24</validity>
+        <subscription>l</subscription>
+        <description>can attend different webinars</description>
+    
+        </offer>
+
+    <offer no='03'>
+
+        <plan>399</plan>
+        <validity>24</validity>
+        <subscription>E</subscription>
+        <description>can have an access to different journals of different lawyers</description>
+    
+    </offer>
+
+</offers>
+
+</User>

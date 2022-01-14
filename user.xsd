@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="User">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="offer" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="no" type="xs:integer"></xs:element>
+                            <xs:element name="plan" type="xs:integer"></xs:element>
+                            <xs:element name="validity" type="xs:integer"></xs:element>
+                            <xs:element name="subscription" type="xs:string"></xs:element>
+                            <xs:element name="description" type="xs:string"></xs:element>
+                            
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+   
+    
+    <xs:element name="no">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:minInclusive value="00"/>
+                <xs:maxInclusive value="04"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="plan">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:minInclusive value="300"/>
+                <xs:maxInclusive value="1000"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="validity">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:minInclusive value="01"/>
+                <xs:maxInclusive value="25"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>
